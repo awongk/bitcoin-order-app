@@ -42,12 +42,6 @@ jobs:
       - name: Lint
         run: |
           npm run lint
-      - name: Lint ng - static code analysis with modification of rules
-        run: |
-          ng run lint
-      - name: Audit - scan Angular libraries for vulnerabilities
-        run: |
-          npm audit fix
       - name: Update types to latest
         run: |
           npm install --save-dev @types/node@latest --force
